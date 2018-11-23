@@ -1,0 +1,137 @@
+/*reset.css*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /*Margin word mee in het element geteld*/
+}
+
+
+/*layout*/
+
+.menu-container {
+  color: #fff;
+  background-color: #5995DA;  /* Blue */
+  padding: 20px 0;
+  display: flex; /* zo maken we een flexcontainer */
+  justify-content: center;
+  /*Zo staat alles in de box in het midden*/
+}
+
+.menu {
+  border: 1px solid #fff;  /* For debugging */
+  width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.login {
+  padding-left: 20px;
+}
+
+.signup {
+  margin-left: auto;
+}
+
+.header-container {
+  color: #5995DA;
+  background-color: #D6E9FE;
+  display: flex;
+  justify-content: center;
+}
+
+.header {
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*align-items zorgt voor de verticale positionering*/
+}
+
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+
+/*
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  align-items: center;*/ /*zet het nu horizontaal in het midden.
+  In dit geval is het horizontaal omdat we de direction hebben omgedraaid*/
+/*}*/
+
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.photo-grid-item {
+  border: 1px solid #fff;
+  width: 300px;
+  height: 300px;
+}
+
+.first-item {
+  order: 1; /*alle items hebben positie 1 dus dit komt als allerlaatste*/
+}
+
+.last-item {
+  order: -1;
+}
+
+.social,
+.subscribe {
+  align-self: flex-end; /*heel de container staat center, maar nu geven we mee dat dit element aan het einde moet staan*/
+  margin-bottom: 20px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  border: 1px solid #fff;
+  background-color: #D6E9FE;
+  height: 200px;
+  /*flex: 1 1 auto;*/
+  /*Zo doen voor Internet Explorer*/
+  flex: inherit;
+  width: 300px;
+}
+
+.footer-one,
+.footer-three {
+  background-color: #5995DA;
+}
+
+.footer-two {
+  flex: 1 1 auto;
+}
+
+/*module*/
+
+
+
+/*elements*/
+
+
+
+/*typografie*/
+
+
+
+/*state*/
